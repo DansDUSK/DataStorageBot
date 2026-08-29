@@ -1,0 +1,858 @@
+2026-08-29 01:24:36,425 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 01:28:40,685 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 01:28:46,823 | INFO | Start polling
+2026-08-29 01:28:46,896 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 01:28:47,795 | INFO | Update id=217955295 is handled. Duration 196 ms by bot id=8908632121
+2026-08-29 01:28:53,518 | INFO | Update id=217955296 is handled. Duration 153 ms by bot id=8908632121
+2026-08-29 01:28:55,820 | INFO | Update id=217955297 is not handled. Duration 67 ms by bot id=8908632121
+2026-08-29 01:28:55,821 | ERROR | Cause exception while process update id=217955297 by bot id=8908632121
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 195, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 187, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\projects VS\aistudy\telegrambotai+stepik\bottask6datastorage.py\message.py", line 453, in about_developer
+    await callback.message.edit_text(text, reply_markup=main_keyboard())
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\client\bot.py", line 514, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-08-29 01:28:58,188 | INFO | Update id=217955298 is not handled. Duration 71 ms by bot id=8908632121
+2026-08-29 01:28:58,188 | ERROR | Cause exception while process update id=217955298 by bot id=8908632121
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 195, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 187, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\projects VS\aistudy\telegrambotai+stepik\bottask6datastorage.py\message.py", line 453, in about_developer
+    await callback.message.edit_text(text, reply_markup=main_keyboard())
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\client\bot.py", line 514, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-08-29 01:29:02,298 | INFO | Update id=217955299 is handled. Duration 300 ms by bot id=8908632121
+2026-08-29 01:29:08,441 | INFO | Polling stopped
+2026-08-29 01:29:08,468 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 01:29:08,469 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 01:29:08,736 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 01:29:08,738 | ERROR | Бот остановлен😴🛑
+2026-08-29 01:30:40,735 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 01:30:41,988 | INFO | Start polling
+2026-08-29 01:30:42,046 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 01:30:46,350 | INFO | Update id=217955300 is handled. Duration 203 ms by bot id=8908632121
+2026-08-29 01:30:47,785 | INFO | Update id=217955301 is handled. Duration 184 ms by bot id=8908632121
+2026-08-29 01:31:00,299 | INFO | Update id=217955302 is handled. Duration 235 ms by bot id=8908632121
+2026-08-29 01:31:02,155 | INFO | Update id=217955303 is handled. Duration 110 ms by bot id=8908632121
+2026-08-29 01:31:04,513 | INFO | Update id=217955304 is handled. Duration 118 ms by bot id=8908632121
+2026-08-29 01:31:05,929 | INFO | Update id=217955305 is handled. Duration 115 ms by bot id=8908632121
+2026-08-29 01:31:07,685 | INFO | Update id=217955306 is handled. Duration 117 ms by bot id=8908632121
+2026-08-29 01:31:08,867 | INFO | Update id=217955307 is handled. Duration 122 ms by bot id=8908632121
+2026-08-29 01:31:10,113 | INFO | Update id=217955308 is handled. Duration 121 ms by bot id=8908632121
+2026-08-29 01:31:15,655 | INFO | Update id=217955309 is handled. Duration 120 ms by bot id=8908632121
+2026-08-29 01:31:16,678 | INFO | Update id=217955310 is handled. Duration 112 ms by bot id=8908632121
+2026-08-29 01:31:17,856 | INFO | Update id=217955311 is handled. Duration 117 ms by bot id=8908632121
+2026-08-29 01:31:18,859 | INFO | Update id=217955312 is handled. Duration 118 ms by bot id=8908632121
+2026-08-29 01:31:19,718 | INFO | Update id=217955313 is handled. Duration 107 ms by bot id=8908632121
+2026-08-29 01:31:21,761 | INFO | Update id=217955314 is handled. Duration 124 ms by bot id=8908632121
+2026-08-29 01:31:22,670 | INFO | Update id=217955315 is handled. Duration 130 ms by bot id=8908632121
+2026-08-29 01:31:23,849 | INFO | Update id=217955316 is handled. Duration 296 ms by bot id=8908632121
+2026-08-29 01:31:25,036 | INFO | Update id=217955317 is handled. Duration 109 ms by bot id=8908632121
+2026-08-29 01:31:27,102 | INFO | Update id=217955318 is handled. Duration 129 ms by bot id=8908632121
+2026-08-29 01:31:28,095 | INFO | Update id=217955319 is handled. Duration 118 ms by bot id=8908632121
+2026-08-29 01:31:29,919 | INFO | Update id=217955320 is handled. Duration 126 ms by bot id=8908632121
+2026-08-29 01:31:32,292 | INFO | Update id=217955321 is handled. Duration 125 ms by bot id=8908632121
+2026-08-29 01:31:33,479 | INFO | Update id=217955322 is handled. Duration 102 ms by bot id=8908632121
+2026-08-29 01:31:46,856 | INFO | Update id=217955323 is handled. Duration 120 ms by bot id=8908632121
+2026-08-29 01:31:47,878 | INFO | Update id=217955324 is handled. Duration 109 ms by bot id=8908632121
+2026-08-29 01:31:49,929 | INFO | Update id=217955325 is handled. Duration 120 ms by bot id=8908632121
+2026-08-29 01:31:50,874 | INFO | Update id=217955326 is handled. Duration 108 ms by bot id=8908632121
+2026-08-29 01:31:52,823 | INFO | Update id=217955327 is handled. Duration 123 ms by bot id=8908632121
+2026-08-29 01:31:53,718 | INFO | Update id=217955328 is handled. Duration 108 ms by bot id=8908632121
+2026-08-29 01:31:55,522 | INFO | Update id=217955329 is handled. Duration 71 ms by bot id=8908632121
+2026-08-29 01:31:57,589 | INFO | Update id=217955330 is handled. Duration 101 ms by bot id=8908632121
+2026-08-29 01:32:15,443 | INFO | Update id=217955331 is handled. Duration 116 ms by bot id=8908632121
+2026-08-29 01:32:30,771 | INFO | Update id=217955332 is handled. Duration 133 ms by bot id=8908632121
+2026-08-29 01:32:35,958 | INFO | Polling stopped
+2026-08-29 01:32:35,961 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 01:32:35,963 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 01:32:36,228 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 01:32:36,233 | ERROR | Бот остановлен😴🛑
+2026-08-29 01:34:52,719 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 01:34:54,045 | INFO | Start polling
+2026-08-29 01:34:54,105 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 01:34:54,404 | INFO | Update id=217955334 is handled. Duration 234 ms by bot id=8908632121
+2026-08-29 01:34:56,945 | INFO | Update id=217955335 is handled. Duration 158 ms by bot id=8908632121
+2026-08-29 01:37:25,345 | INFO | Polling stopped
+2026-08-29 01:37:25,348 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 01:37:25,348 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 01:37:25,603 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 01:37:25,624 | ERROR | Бот остановлен😴🛑
+2026-08-29 01:38:41,697 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 01:38:43,299 | INFO | Start polling
+2026-08-29 01:38:43,366 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 01:38:46,794 | INFO | Update id=217955336 is handled. Duration 179 ms by bot id=8908632121
+2026-08-29 01:38:48,115 | INFO | Update id=217955337 is handled. Duration 147 ms by bot id=8908632121
+2026-08-29 01:38:49,480 | INFO | Update id=217955338 is handled. Duration 151 ms by bot id=8908632121
+2026-08-29 01:38:55,128 | INFO | Update id=217955339 is handled. Duration 146 ms by bot id=8908632121
+2026-08-29 01:38:56,229 | INFO | Update id=217955340 is handled. Duration 121 ms by bot id=8908632121
+2026-08-29 01:38:57,590 | INFO | Update id=217955341 is handled. Duration 124 ms by bot id=8908632121
+2026-08-29 01:38:59,156 | INFO | Update id=217955342 is handled. Duration 118 ms by bot id=8908632121
+2026-08-29 01:39:09,093 | INFO | Polling stopped
+2026-08-29 01:39:09,095 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 01:39:09,095 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 01:39:09,346 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 01:39:09,348 | ERROR | Бот остановлен😴🛑
+2026-08-29 01:39:58,685 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 01:40:00,047 | INFO | Start polling
+2026-08-29 01:40:00,105 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 01:40:08,725 | INFO | Update id=217955343 is handled. Duration 283 ms by bot id=8908632121
+2026-08-29 01:40:09,926 | INFO | Update id=217955344 is handled. Duration 120 ms by bot id=8908632121
+2026-08-29 01:40:29,944 | INFO | Polling stopped
+2026-08-29 01:40:29,948 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 01:40:29,948 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 01:40:30,211 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 01:40:30,217 | ERROR | Бот остановлен😴🛑
+2026-08-29 01:52:26,950 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 01:52:28,264 | INFO | Start polling
+2026-08-29 01:52:28,330 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 01:52:28,562 | INFO | Update id=217955345 is handled. Duration 166 ms by bot id=8908632121
+2026-08-29 01:52:30,923 | INFO | Update id=217955346 is handled. Duration 144 ms by bot id=8908632121
+2026-08-29 01:52:52,643 | INFO | Update id=217955347 is handled. Duration 116 ms by bot id=8908632121
+2026-08-29 01:52:53,785 | INFO | Update id=217955348 is handled. Duration 131 ms by bot id=8908632121
+2026-08-29 01:52:55,625 | INFO | Update id=217955349 is handled. Duration 113 ms by bot id=8908632121
+2026-08-29 01:53:04,999 | INFO | Update id=217955350 is handled. Duration 146 ms by bot id=8908632121
+2026-08-29 01:53:19,656 | INFO | Update id=217955351 is handled. Duration 124 ms by bot id=8908632121
+2026-08-29 01:53:20,701 | INFO | Update id=217955352 is handled. Duration 130 ms by bot id=8908632121
+2026-08-29 01:53:21,711 | INFO | Update id=217955353 is handled. Duration 121 ms by bot id=8908632121
+2026-08-29 01:53:27,962 | INFO | Update id=217955354 is handled. Duration 115 ms by bot id=8908632121
+2026-08-29 01:53:30,478 | INFO | Update id=217955355 is handled. Duration 122 ms by bot id=8908632121
+2026-08-29 01:53:40,187 | INFO | Polling stopped
+2026-08-29 01:53:40,189 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 01:53:40,189 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 01:53:40,442 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 01:53:40,447 | ERROR | Бот остановлен😴🛑
+2026-08-29 01:53:58,802 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 01:54:00,259 | INFO | Start polling
+2026-08-29 01:54:00,326 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 01:54:02,163 | INFO | Update id=217955356 is handled. Duration 207 ms by bot id=8908632121
+2026-08-29 01:54:03,433 | INFO | Update id=217955357 is handled. Duration 164 ms by bot id=8908632121
+2026-08-29 01:54:04,709 | INFO | Update id=217955358 is handled. Duration 157 ms by bot id=8908632121
+2026-08-29 01:54:05,745 | INFO | Update id=217955359 is handled. Duration 142 ms by bot id=8908632121
+2026-08-29 01:54:06,920 | INFO | Update id=217955360 is handled. Duration 140 ms by bot id=8908632121
+2026-08-29 01:54:08,426 | INFO | Update id=217955361 is handled. Duration 145 ms by bot id=8908632121
+2026-08-29 01:54:10,935 | INFO | Update id=217955362 is handled. Duration 101 ms by bot id=8908632121
+2026-08-29 01:54:14,676 | INFO | Update id=217955363 is handled. Duration 142 ms by bot id=8908632121
+2026-08-29 01:54:16,728 | INFO | Update id=217955364 is handled. Duration 137 ms by bot id=8908632121
+2026-08-29 01:54:20,048 | INFO | Update id=217955365 is not handled. Duration 1 ms by bot id=8908632121
+2026-08-29 01:54:20,048 | ERROR | Cause exception while process update id=217955365 by bot id=8908632121
+TypeError: object of type 'coroutine' has no len()
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 195, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 187, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\projects VS\aistudy\telegrambotai+stepik\bottask6datastorage.py\message.py", line 121, in search_note1
+    text += f"🔍 <b>Найдено заметок: {len(notes)}</b>\n\n"
+                                      ~~~^^^^^^^
+TypeError: object of type 'coroutine' has no len()
+2026-08-29 01:54:27,278 | INFO | Update id=217955366 is handled. Duration 153 ms by bot id=8908632121
+2026-08-29 01:54:28,470 | INFO | Update id=217955367 is handled. Duration 150 ms by bot id=8908632121
+2026-08-29 01:54:29,921 | INFO | Update id=217955368 is handled. Duration 249 ms by bot id=8908632121
+2026-08-29 01:55:38,537 | INFO | Update id=217955369 is handled. Duration 335 ms by bot id=8908632121
+2026-08-29 01:55:40,494 | INFO | Update id=217955370 is handled. Duration 141 ms by bot id=8908632121
+2026-08-29 01:55:42,158 | INFO | Update id=217955371 is handled. Duration 154 ms by bot id=8908632121
+2026-08-29 01:55:47,504 | INFO | Update id=217955372 is handled. Duration 155 ms by bot id=8908632121
+2026-08-29 01:56:21,729 | INFO | Update id=217955373 is handled. Duration 145 ms by bot id=8908632121
+2026-08-29 01:56:25,048 | INFO | Update id=217955374 is handled. Duration 153 ms by bot id=8908632121
+2026-08-29 01:56:26,493 | INFO | Update id=217955375 is handled. Duration 149 ms by bot id=8908632121
+2026-08-29 01:56:30,624 | INFO | Update id=217955376 is handled. Duration 171 ms by bot id=8908632121
+2026-08-29 01:57:56,090 | INFO | Update id=217955377 is handled. Duration 94 ms by bot id=8908632121
+2026-08-29 01:57:59,049 | INFO | Update id=217955378 is handled. Duration 132 ms by bot id=8908632121
+2026-08-29 01:58:02,257 | INFO | Update id=217955379 is handled. Duration 103 ms by bot id=8908632121
+2026-08-29 01:58:04,867 | INFO | Update id=217955380 is handled. Duration 212 ms by bot id=8908632121
+2026-08-29 01:58:06,292 | INFO | Update id=217955381 is handled. Duration 144 ms by bot id=8908632121
+2026-08-29 02:01:13,111 | INFO | Polling stopped
+2026-08-29 02:01:13,114 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 02:01:13,114 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 02:01:13,376 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 02:01:13,379 | ERROR | Бот остановлен😴🛑
+2026-08-29 02:05:04,475 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 02:05:06,209 | INFO | Start polling
+2026-08-29 02:05:06,274 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 02:05:09,185 | INFO | Update id=217955382 is handled. Duration 193 ms by bot id=8908632121
+2026-08-29 02:05:13,007 | INFO | Update id=217955383 is handled. Duration 198 ms by bot id=8908632121
+2026-08-29 02:05:20,840 | INFO | Update id=217955384 is handled. Duration 139 ms by bot id=8908632121
+2026-08-29 02:05:23,022 | INFO | Update id=217955385 is handled. Duration 123 ms by bot id=8908632121
+2026-08-29 02:05:23,944 | INFO | Update id=217955386 is handled. Duration 120 ms by bot id=8908632121
+2026-08-29 02:05:24,823 | INFO | Update id=217955387 is handled. Duration 127 ms by bot id=8908632121
+2026-08-29 02:05:26,037 | INFO | Update id=217955388 is handled. Duration 132 ms by bot id=8908632121
+2026-08-29 02:05:28,685 | INFO | Update id=217955389 is handled. Duration 127 ms by bot id=8908632121
+2026-08-29 02:05:30,191 | INFO | Update id=217955390 is handled. Duration 117 ms by bot id=8908632121
+2026-08-29 02:05:33,537 | INFO | Update id=217955391 is not handled. Duration 2 ms by bot id=8908632121
+2026-08-29 02:05:33,538 | ERROR | Cause exception while process update id=217955391 by bot id=8908632121
+TypeError: object of type 'coroutine' has no len()
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 195, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 187, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\projects VS\aistudy\telegrambotai+stepik\bottask6datastorage.py\message.py", line 121, in search_note1
+    text += f"🔍 <b>Найдено заметок: {len(notes)}</b>\n\n"
+                                      ~~~^^^^^^^
+TypeError: object of type 'coroutine' has no len()
+2026-08-29 02:06:54,150 | INFO | Polling stopped
+2026-08-29 02:06:54,153 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 02:06:54,154 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 02:06:54,409 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 02:06:54,413 | ERROR | Бот остановлен😴🛑
+2026-08-29 15:08:51,869 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 15:08:53,769 | INFO | Start polling
+2026-08-29 15:08:53,827 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:08:55,664 | INFO | Update id=217955392 is handled. Duration 190 ms by bot id=8908632121
+2026-08-29 15:08:57,308 | INFO | Update id=217955393 is handled. Duration 137 ms by bot id=8908632121
+2026-08-29 15:09:02,576 | INFO | Update id=217955394 is handled. Duration 117 ms by bot id=8908632121
+2026-08-29 15:09:09,646 | INFO | Update id=217955395 is handled. Duration 128 ms by bot id=8908632121
+2026-08-29 15:09:10,980 | INFO | Update id=217955396 is handled. Duration 132 ms by bot id=8908632121
+2026-08-29 15:09:12,644 | INFO | Update id=217955397 is handled. Duration 127 ms by bot id=8908632121
+2026-08-29 15:09:13,759 | INFO | Update id=217955398 is handled. Duration 126 ms by bot id=8908632121
+2026-08-29 15:09:18,288 | INFO | Update id=217955399 is handled. Duration 79 ms by bot id=8908632121
+2026-08-29 15:09:25,390 | INFO | Update id=217955400 is handled. Duration 121 ms by bot id=8908632121
+2026-08-29 15:09:26,538 | INFO | Update id=217955401 is handled. Duration 149 ms by bot id=8908632121
+2026-08-29 15:09:28,636 | INFO | Update id=217955402 is handled. Duration 137 ms by bot id=8908632121
+2026-08-29 15:09:31,487 | INFO | Update id=217955403 is handled. Duration 238 ms by bot id=8908632121
+2026-08-29 15:09:33,910 | INFO | Update id=217955404 is handled. Duration 203 ms by bot id=8908632121
+2026-08-29 15:09:35,166 | INFO | Update id=217955405 is handled. Duration 118 ms by bot id=8908632121
+2026-08-29 15:09:37,745 | INFO | Update id=217955406 is handled. Duration 107 ms by bot id=8908632121
+2026-08-29 15:09:40,396 | INFO | Update id=217955407 is handled. Duration 130 ms by bot id=8908632121
+2026-08-29 15:09:41,812 | INFO | Update id=217955408 is handled. Duration 255 ms by bot id=8908632121
+2026-08-29 15:09:46,021 | INFO | Update id=217955409 is handled. Duration 308 ms by bot id=8908632121
+2026-08-29 15:09:47,011 | INFO | Update id=217955410 is handled. Duration 125 ms by bot id=8908632121
+2026-08-29 15:09:48,872 | INFO | Update id=217955411 is handled. Duration 109 ms by bot id=8908632121
+2026-08-29 15:09:50,524 | INFO | Update id=217955412 is handled. Duration 122 ms by bot id=8908632121
+2026-08-29 15:09:51,733 | INFO | Update id=217955413 is handled. Duration 257 ms by bot id=8908632121
+2026-08-29 15:09:54,536 | INFO | Update id=217955414 is handled. Duration 142 ms by bot id=8908632121
+2026-08-29 15:09:59,209 | INFO | Update id=217955415 is handled. Duration 101 ms by bot id=8908632121
+2026-08-29 15:10:01,451 | INFO | Update id=217955416 is handled. Duration 124 ms by bot id=8908632121
+2026-08-29 15:10:02,757 | INFO | Update id=217955417 is handled. Duration 126 ms by bot id=8908632121
+2026-08-29 15:10:05,309 | INFO | Update id=217955418 is handled. Duration 502 ms by bot id=8908632121
+2026-08-29 15:10:08,102 | INFO | Update id=217955419 is handled. Duration 127 ms by bot id=8908632121
+2026-08-29 15:10:10,170 | INFO | Update id=217955420 is handled. Duration 132 ms by bot id=8908632121
+2026-08-29 15:10:13,842 | INFO | Update id=217955421 is handled. Duration 151 ms by bot id=8908632121
+2026-08-29 15:10:15,174 | INFO | Update id=217955422 is handled. Duration 119 ms by bot id=8908632121
+2026-08-29 15:10:16,772 | INFO | Update id=217955423 is handled. Duration 123 ms by bot id=8908632121
+2026-08-29 15:10:21,051 | INFO | Update id=217955424 is handled. Duration 75 ms by bot id=8908632121
+2026-08-29 15:10:31,789 | INFO | Update id=217955425 is handled. Duration 120 ms by bot id=8908632121
+2026-08-29 15:10:32,974 | INFO | Update id=217955426 is handled. Duration 135 ms by bot id=8908632121
+2026-08-29 15:10:35,881 | INFO | Update id=217955427 is handled. Duration 79 ms by bot id=8908632121
+2026-08-29 15:10:40,139 | INFO | Update id=217955428 is handled. Duration 123 ms by bot id=8908632121
+2026-08-29 15:10:41,094 | INFO | Update id=217955429 is handled. Duration 117 ms by bot id=8908632121
+2026-08-29 15:10:44,883 | INFO | Update id=217955430 is handled. Duration 76 ms by bot id=8908632121
+2026-08-29 15:10:50,836 | INFO | Update id=217955431 is handled. Duration 126 ms by bot id=8908632121
+2026-08-29 15:10:51,672 | INFO | Update id=217955432 is handled. Duration 144 ms by bot id=8908632121
+2026-08-29 15:10:53,141 | INFO | Update id=217955433 is handled. Duration 130 ms by bot id=8908632121
+2026-08-29 15:10:54,288 | INFO | Update id=217955434 is handled. Duration 122 ms by bot id=8908632121
+2026-08-29 15:10:56,116 | INFO | Update id=217955435 is handled. Duration 107 ms by bot id=8908632121
+2026-08-29 15:11:22,460 | INFO | Update id=217955436 is handled. Duration 155 ms by bot id=8908632121
+2026-08-29 15:11:23,565 | INFO | Update id=217955437 is handled. Duration 121 ms by bot id=8908632121
+2026-08-29 15:11:24,617 | INFO | Update id=217955438 is handled. Duration 145 ms by bot id=8908632121
+2026-08-29 15:11:25,872 | INFO | Update id=217955439 is handled. Duration 120 ms by bot id=8908632121
+2026-08-29 15:12:22,421 | INFO | Update id=217955440 is handled. Duration 117 ms by bot id=8908632121
+2026-08-29 15:12:23,391 | INFO | Update id=217955441 is handled. Duration 126 ms by bot id=8908632121
+2026-08-29 15:12:24,239 | INFO | Update id=217955442 is handled. Duration 120 ms by bot id=8908632121
+2026-08-29 15:12:33,406 | INFO | Update id=217955443 is handled. Duration 126 ms by bot id=8908632121
+2026-08-29 15:12:34,382 | INFO | Update id=217955444 is handled. Duration 160 ms by bot id=8908632121
+2026-08-29 15:12:42,152 | INFO | Update id=217955445 is handled. Duration 103 ms by bot id=8908632121
+2026-08-29 15:12:43,568 | INFO | Update id=217955446 is handled. Duration 147 ms by bot id=8908632121
+2026-08-29 15:12:44,769 | INFO | Update id=217955447 is handled. Duration 139 ms by bot id=8908632121
+2026-08-29 15:16:25,879 | INFO | Polling stopped
+2026-08-29 15:16:25,884 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 15:16:25,885 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 15:16:26,159 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:16:26,176 | ERROR | Бот остановлен😴🛑
+2026-08-29 15:16:48,102 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 15:16:49,496 | INFO | Start polling
+2026-08-29 15:16:49,573 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:16:54,423 | INFO | Update id=217955449 is handled. Duration 215 ms by bot id=8908632121
+2026-08-29 15:16:56,954 | INFO | Update id=217955450 is handled. Duration 134 ms by bot id=8908632121
+2026-08-29 15:16:57,924 | INFO | Update id=217955451 is handled. Duration 167 ms by bot id=8908632121
+2026-08-29 15:16:59,086 | INFO | Update id=217955452 is handled. Duration 139 ms by bot id=8908632121
+2026-08-29 15:17:00,419 | INFO | Update id=217955453 is handled. Duration 141 ms by bot id=8908632121
+2026-08-29 15:17:01,469 | INFO | Update id=217955454 is handled. Duration 134 ms by bot id=8908632121
+2026-08-29 15:17:02,529 | INFO | Update id=217955455 is handled. Duration 249 ms by bot id=8908632121
+2026-08-29 15:17:03,791 | INFO | Update id=217955456 is handled. Duration 182 ms by bot id=8908632121
+2026-08-29 15:17:04,923 | INFO | Update id=217955457 is handled. Duration 166 ms by bot id=8908632121
+2026-08-29 15:17:54,467 | INFO | Polling stopped
+2026-08-29 15:17:54,469 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 15:17:54,469 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 15:17:54,722 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:17:54,724 | ERROR | Бот остановлен😴🛑
+2026-08-29 15:19:20,885 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 15:19:22,066 | INFO | Start polling
+2026-08-29 15:19:22,122 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:19:33,634 | INFO | Update id=217955458 is handled. Duration 172 ms by bot id=8908632121
+2026-08-29 15:19:35,671 | INFO | Update id=217955459 is handled. Duration 220 ms by bot id=8908632121
+2026-08-29 15:19:38,397 | INFO | Update id=217955460 is handled. Duration 89 ms by bot id=8908632121
+2026-08-29 15:19:51,907 | INFO | Update id=217955461 is handled. Duration 174 ms by bot id=8908632121
+2026-08-29 15:19:53,278 | INFO | Update id=217955462 is handled. Duration 284 ms by bot id=8908632121
+2026-08-29 15:19:54,813 | INFO | Update id=217955463 is handled. Duration 119 ms by bot id=8908632121
+2026-08-29 15:19:55,783 | INFO | Update id=217955464 is handled. Duration 118 ms by bot id=8908632121
+2026-08-29 15:20:37,623 | INFO | Polling stopped
+2026-08-29 15:20:37,625 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 15:20:37,625 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 15:20:37,884 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:20:37,887 | ERROR | Бот остановлен😴🛑
+2026-08-29 15:21:33,538 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 15:21:35,384 | INFO | Start polling
+2026-08-29 15:21:35,452 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:21:37,732 | INFO | Update id=217955466 is handled. Duration 341 ms by bot id=8908632121
+2026-08-29 15:21:39,424 | INFO | Update id=217955467 is handled. Duration 155 ms by bot id=8908632121
+2026-08-29 15:22:07,262 | INFO | Update id=217955468 is handled. Duration 149 ms by bot id=8908632121
+2026-08-29 15:22:09,187 | INFO | Update id=217955469 is handled. Duration 392 ms by bot id=8908632121
+2026-08-29 15:22:11,460 | INFO | Update id=217955470 is handled. Duration 150 ms by bot id=8908632121
+2026-08-29 15:22:12,617 | INFO | Update id=217955471 is handled. Duration 151 ms by bot id=8908632121
+2026-08-29 15:22:14,206 | INFO | Update id=217955472 is handled. Duration 132 ms by bot id=8908632121
+2026-08-29 15:22:16,882 | INFO | Update id=217955473 is handled. Duration 146 ms by bot id=8908632121
+2026-08-29 15:22:20,569 | INFO | Update id=217955474 is handled. Duration 187 ms by bot id=8908632121
+2026-08-29 15:22:22,027 | INFO | Update id=217955475 is handled. Duration 186 ms by bot id=8908632121
+2026-08-29 15:22:24,963 | INFO | Update id=217955476 is handled. Duration 164 ms by bot id=8908632121
+2026-08-29 15:23:25,307 | INFO | Polling stopped
+2026-08-29 15:23:25,310 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 15:23:25,311 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 15:23:25,577 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:23:25,581 | ERROR | Бот остановлен😴🛑
+2026-08-29 15:23:48,455 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 15:23:49,822 | INFO | Start polling
+2026-08-29 15:23:49,880 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:24:04,717 | INFO | Update id=217955477 is handled. Duration 170 ms by bot id=8908632121
+2026-08-29 15:24:05,992 | INFO | Update id=217955478 is handled. Duration 143 ms by bot id=8908632121
+2026-08-29 15:24:07,639 | INFO | Update id=217955479 is handled. Duration 128 ms by bot id=8908632121
+2026-08-29 15:24:18,731 | INFO | Update id=217955480 is handled. Duration 164 ms by bot id=8908632121
+2026-08-29 15:24:19,931 | INFO | Update id=217955481 is handled. Duration 144 ms by bot id=8908632121
+2026-08-29 15:24:21,715 | INFO | Update id=217955482 is handled. Duration 93 ms by bot id=8908632121
+2026-08-29 15:24:41,645 | INFO | Polling stopped
+2026-08-29 15:24:41,648 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 15:24:41,649 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 15:24:41,914 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:24:41,922 | ERROR | Бот остановлен😴🛑
+2026-08-29 15:27:24,542 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 15:27:25,901 | INFO | Start polling
+2026-08-29 15:27:25,961 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:27:32,074 | INFO | Update id=217955483 is handled. Duration 211 ms by bot id=8908632121
+2026-08-29 15:27:33,745 | INFO | Update id=217955484 is handled. Duration 158 ms by bot id=8908632121
+2026-08-29 15:27:37,560 | INFO | Update id=217955485 is handled. Duration 104 ms by bot id=8908632121
+2026-08-29 15:27:39,767 | INFO | Update id=217955486 is handled. Duration 120 ms by bot id=8908632121
+2026-08-29 15:27:41,188 | INFO | Update id=217955487 is handled. Duration 177 ms by bot id=8908632121
+2026-08-29 15:27:43,582 | INFO | Update id=217955488 is handled. Duration 96 ms by bot id=8908632121
+2026-08-29 15:27:46,037 | INFO | Update id=217955489 is handled. Duration 209 ms by bot id=8908632121
+2026-08-29 15:27:47,066 | INFO | Update id=217955490 is handled. Duration 164 ms by bot id=8908632121
+2026-08-29 15:27:49,050 | INFO | Update id=217955491 is handled. Duration 208 ms by bot id=8908632121
+2026-08-29 15:27:50,063 | INFO | Update id=217955492 is handled. Duration 139 ms by bot id=8908632121
+2026-08-29 15:27:58,610 | INFO | Update id=217955493 is handled. Duration 166 ms by bot id=8908632121
+2026-08-29 15:27:59,785 | INFO | Update id=217955494 is handled. Duration 130 ms by bot id=8908632121
+2026-08-29 15:28:02,859 | INFO | Update id=217955495 is handled. Duration 98 ms by bot id=8908632121
+2026-08-29 15:28:04,413 | INFO | Update id=217955496 is handled. Duration 127 ms by bot id=8908632121
+2026-08-29 15:28:05,628 | INFO | Update id=217955497 is handled. Duration 150 ms by bot id=8908632121
+2026-08-29 15:28:06,750 | INFO | Update id=217955498 is handled. Duration 102 ms by bot id=8908632121
+2026-08-29 15:28:10,775 | INFO | Update id=217955499 is handled. Duration 339 ms by bot id=8908632121
+2026-08-29 15:28:11,886 | INFO | Update id=217955500 is handled. Duration 394 ms by bot id=8908632121
+2026-08-29 15:28:13,188 | INFO | Update id=217955501 is handled. Duration 148 ms by bot id=8908632121
+2026-08-29 15:28:14,491 | INFO | Update id=217955502 is handled. Duration 221 ms by bot id=8908632121
+2026-08-29 15:28:16,043 | INFO | Update id=217955503 is handled. Duration 330 ms by bot id=8908632121
+2026-08-29 15:28:20,004 | INFO | Update id=217955504 is handled. Duration 444 ms by bot id=8908632121
+2026-08-29 15:28:32,657 | INFO | Update id=217955505 is handled. Duration 103 ms by bot id=8908632121
+2026-08-29 15:28:42,356 | INFO | Update id=217955506 is handled. Duration 73 ms by bot id=8908632121
+2026-08-29 15:28:49,699 | INFO | Update id=217955507 is handled. Duration 5 ms by bot id=8908632121
+2026-08-29 15:28:55,113 | INFO | Update id=217955508 is handled. Duration 235 ms by bot id=8908632121
+2026-08-29 15:28:56,184 | INFO | Update id=217955509 is handled. Duration 130 ms by bot id=8908632121
+2026-08-29 15:29:01,605 | INFO | Update id=217955510 is handled. Duration 167 ms by bot id=8908632121
+2026-08-29 15:29:03,209 | INFO | Update id=217955511 is handled. Duration 131 ms by bot id=8908632121
+2026-08-29 15:29:06,832 | INFO | Update id=217955512 is handled. Duration 133 ms by bot id=8908632121
+2026-08-29 15:29:08,660 | INFO | Update id=217955513 is handled. Duration 181 ms by bot id=8908632121
+2026-08-29 15:29:13,167 | INFO | Update id=217955514 is not handled. Duration 2 ms by bot id=8908632121
+2026-08-29 15:29:13,167 | ERROR | Cause exception while process update id=217955514 by bot id=8908632121
+TypeError: object of type 'coroutine' has no len()
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 195, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 167, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 159, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\router.py", line 187, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\projects VS\aistudy\telegrambotai+stepik\bottask6datastorage.py\message.py", line 307, in search_file1
+    text += f"🔍 <b>Найдено файлов: {len(files)}</b>\n\n"
+                                     ~~~^^^^^^^
+TypeError: object of type 'coroutine' has no len()
+2026-08-29 15:29:33,313 | INFO | Update id=217955515 is handled. Duration 286 ms by bot id=8908632121
+2026-08-29 15:29:34,404 | INFO | Update id=217955516 is handled. Duration 124 ms by bot id=8908632121
+2026-08-29 15:29:35,957 | INFO | Update id=217955517 is handled. Duration 148 ms by bot id=8908632121
+2026-08-29 15:29:38,604 | INFO | Update id=217955518 is handled. Duration 5 ms by bot id=8908632121
+2026-08-29 15:32:45,045 | INFO | Polling stopped
+2026-08-29 15:32:45,049 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 15:32:45,050 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 15:32:45,305 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:32:45,310 | ERROR | Бот остановлен😴🛑
+2026-08-29 15:33:06,255 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 15:33:07,513 | INFO | Start polling
+2026-08-29 15:33:07,577 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:33:11,971 | INFO | Update id=217955520 is handled. Duration 1201 ms by bot id=8908632121
+2026-08-29 15:33:14,551 | INFO | Update id=217955521 is handled. Duration 164 ms by bot id=8908632121
+2026-08-29 15:33:15,652 | INFO | Update id=217955522 is handled. Duration 236 ms by bot id=8908632121
+2026-08-29 15:33:16,648 | INFO | Update id=217955523 is handled. Duration 136 ms by bot id=8908632121
+2026-08-29 15:33:18,570 | INFO | Update id=217955524 is handled. Duration 182 ms by bot id=8908632121
+2026-08-29 15:33:20,281 | INFO | Update id=217955525 is handled. Duration 129 ms by bot id=8908632121
+2026-08-29 15:33:21,335 | INFO | Update id=217955526 is handled. Duration 126 ms by bot id=8908632121
+2026-08-29 15:33:23,594 | INFO | Update id=217955527 is handled. Duration 5 ms by bot id=8908632121
+2026-08-29 15:33:30,585 | INFO | Update id=217955528 is handled. Duration 144 ms by bot id=8908632121
+2026-08-29 15:33:32,376 | INFO | Update id=217955529 is handled. Duration 135 ms by bot id=8908632121
+2026-08-29 15:33:33,892 | INFO | Update id=217955530 is handled. Duration 131 ms by bot id=8908632121
+2026-08-29 15:33:34,896 | INFO | Update id=217955531 is handled. Duration 130 ms by bot id=8908632121
+2026-08-29 15:33:35,932 | INFO | Update id=217955532 is handled. Duration 132 ms by bot id=8908632121
+2026-08-29 15:33:38,122 | INFO | Update id=217955533 is handled. Duration 4 ms by bot id=8908632121
+2026-08-29 15:33:45,637 | INFO | Update id=217955534 is handled. Duration 379 ms by bot id=8908632121
+2026-08-29 15:33:49,850 | INFO | Update id=217955535 is handled. Duration 3 ms by bot id=8908632121
+2026-08-29 15:34:28,277 | INFO | Update id=217955536 is handled. Duration 169 ms by bot id=8908632121
+2026-08-29 15:34:30,301 | INFO | Update id=217955537 is handled. Duration 346 ms by bot id=8908632121
+2026-08-29 15:34:31,037 | INFO | Update id=217955538 is handled. Duration 163 ms by bot id=8908632121
+2026-08-29 15:34:53,381 | INFO | Update id=217955539 is handled. Duration 132 ms by bot id=8908632121
+2026-08-29 15:38:31,697 | INFO | Polling stopped
+2026-08-29 15:38:31,700 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 15:38:31,702 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 15:38:31,957 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:38:31,968 | ERROR | Бот остановлен😴🛑
+2026-08-29 15:38:50,343 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 15:38:51,546 | INFO | Start polling
+2026-08-29 15:38:51,609 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:38:58,733 | INFO | Update id=217955540 is handled. Duration 188 ms by bot id=8908632121
+2026-08-29 15:39:00,872 | INFO | Update id=217955541 is handled. Duration 171 ms by bot id=8908632121
+2026-08-29 15:39:02,573 | INFO | Update id=217955542 is handled. Duration 156 ms by bot id=8908632121
+2026-08-29 15:39:04,317 | INFO | Update id=217955543 is handled. Duration 367 ms by bot id=8908632121
+2026-08-29 15:39:06,324 | INFO | Update id=217955544 is handled. Duration 131 ms by bot id=8908632121
+2026-08-29 15:39:08,777 | INFO | Update id=217955545 is handled. Duration 3 ms by bot id=8908632121
+2026-08-29 15:40:29,332 | INFO | Update id=217955546 is handled. Duration 129 ms by bot id=8908632121
+2026-08-29 15:40:37,006 | INFO | Update id=217955547 is handled. Duration 131 ms by bot id=8908632121
+2026-08-29 15:40:39,019 | INFO | Update id=217955548 is handled. Duration 175 ms by bot id=8908632121
+2026-08-29 15:40:40,941 | INFO | Update id=217955549 is handled. Duration 199 ms by bot id=8908632121
+2026-08-29 15:40:43,099 | INFO | Update id=217955550 is handled. Duration 156 ms by bot id=8908632121
+2026-08-29 15:40:46,979 | INFO | Update id=217955551 is handled. Duration 169 ms by bot id=8908632121
+2026-08-29 15:40:49,004 | INFO | Update id=217955552 is handled. Duration 172 ms by bot id=8908632121
+2026-08-29 15:40:53,090 | INFO | Update id=217955553 is handled. Duration 344 ms by bot id=8908632121
+2026-08-29 15:40:53,918 | INFO | Update id=217955554 is handled. Duration 154 ms by bot id=8908632121
+2026-08-29 15:40:55,427 | INFO | Update id=217955555 is handled. Duration 127 ms by bot id=8908632121
+2026-08-29 15:40:58,297 | INFO | Update id=217955556 is handled. Duration 80 ms by bot id=8908632121
+2026-08-29 15:41:05,079 | INFO | Update id=217955557 is handled. Duration 257 ms by bot id=8908632121
+2026-08-29 15:41:11,918 | INFO | Update id=217955558 is handled. Duration 156 ms by bot id=8908632121
+2026-08-29 15:41:13,887 | INFO | Update id=217955559 is handled. Duration 136 ms by bot id=8908632121
+2026-08-29 15:41:15,575 | INFO | Update id=217955560 is handled. Duration 146 ms by bot id=8908632121
+2026-08-29 15:41:16,745 | INFO | Update id=217955561 is handled. Duration 123 ms by bot id=8908632121
+2026-08-29 15:41:18,896 | INFO | Update id=217955562 is handled. Duration 3 ms by bot id=8908632121
+2026-08-29 15:41:20,864 | INFO | Update id=217955563 is handled. Duration 120 ms by bot id=8908632121
+2026-08-29 15:41:22,004 | INFO | Update id=217955564 is handled. Duration 189 ms by bot id=8908632121
+2026-08-29 15:41:23,447 | INFO | Update id=217955565 is handled. Duration 172 ms by bot id=8908632121
+2026-08-29 15:41:32,103 | INFO | Update id=217955566 is handled. Duration 143 ms by bot id=8908632121
+2026-08-29 15:41:33,634 | INFO | Update id=217955567 is handled. Duration 132 ms by bot id=8908632121
+2026-08-29 15:41:36,863 | INFO | Update id=217955568 is handled. Duration 91 ms by bot id=8908632121
+2026-08-29 15:41:40,316 | INFO | Update id=217955569 is handled. Duration 127 ms by bot id=8908632121
+2026-08-29 15:41:41,270 | INFO | Update id=217955570 is handled. Duration 140 ms by bot id=8908632121
+2026-08-29 15:41:43,791 | INFO | Update id=217955571 is handled. Duration 97 ms by bot id=8908632121
+2026-08-29 15:41:58,072 | INFO | Update id=217955572 is handled. Duration 3 ms by bot id=8908632121
+2026-08-29 15:41:59,802 | INFO | Update id=217955573 is handled. Duration 167 ms by bot id=8908632121
+2026-08-29 15:42:07,938 | INFO | Polling stopped
+2026-08-29 15:42:07,944 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 15:42:07,945 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 15:42:08,213 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:42:08,219 | ERROR | Бот остановлен😴🛑
+2026-08-29 15:43:34,275 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 15:43:35,499 | INFO | Start polling
+2026-08-29 15:43:35,554 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:43:36,807 | INFO | Update id=217955574 is handled. Duration 173 ms by bot id=8908632121
+2026-08-29 15:43:39,072 | INFO | Update id=217955575 is handled. Duration 127 ms by bot id=8908632121
+2026-08-29 15:43:39,858 | INFO | Update id=217955576 is handled. Duration 112 ms by bot id=8908632121
+2026-08-29 15:43:41,231 | INFO | Update id=217955577 is handled. Duration 110 ms by bot id=8908632121
+2026-08-29 15:43:42,332 | INFO | Update id=217955578 is handled. Duration 113 ms by bot id=8908632121
+2026-08-29 15:43:45,010 | INFO | Update id=217955579 is handled. Duration 5 ms by bot id=8908632121
+2026-08-29 15:46:13,229 | INFO | Polling stopped
+2026-08-29 15:46:13,231 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 15:46:13,231 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 15:46:13,495 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:46:13,678 | ERROR | Бот остановлен😴🛑
+2026-08-29 15:47:14,901 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 15:47:16,183 | INFO | Start polling
+2026-08-29 15:47:16,241 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:47:16,999 | INFO | Update id=217955580 is handled. Duration 166 ms by bot id=8908632121
+2026-08-29 15:47:18,864 | INFO | Update id=217955581 is handled. Duration 148 ms by bot id=8908632121
+2026-08-29 15:47:21,354 | INFO | Update id=217955582 is handled. Duration 127 ms by bot id=8908632121
+2026-08-29 15:47:22,633 | INFO | Update id=217955583 is handled. Duration 119 ms by bot id=8908632121
+2026-08-29 15:47:23,642 | INFO | Update id=217955584 is handled. Duration 213 ms by bot id=8908632121
+2026-08-29 15:47:25,642 | INFO | Update id=217955585 is handled. Duration 6 ms by bot id=8908632121
+2026-08-29 15:49:37,799 | INFO | Polling stopped
+2026-08-29 15:49:37,802 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 15:49:37,803 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 15:49:38,058 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:49:38,061 | ERROR | Бот остановлен😴🛑
+2026-08-29 15:51:52,341 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 15:51:53,559 | INFO | Start polling
+2026-08-29 15:51:53,632 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:52:11,852 | INFO | Update id=217955586 is handled. Duration 248 ms by bot id=8908632121
+2026-08-29 15:52:15,354 | INFO | Update id=217955587 is handled. Duration 229 ms by bot id=8908632121
+2026-08-29 15:52:17,270 | INFO | Update id=217955588 is handled. Duration 231 ms by bot id=8908632121
+2026-08-29 15:52:24,769 | INFO | Update id=217955589 is handled. Duration 381 ms by bot id=8908632121
+2026-08-29 15:52:26,448 | INFO | Update id=217955590 is handled. Duration 133 ms by bot id=8908632121
+2026-08-29 15:52:29,342 | INFO | Update id=217955591 is handled. Duration 185 ms by bot id=8908632121
+2026-08-29 15:52:36,025 | INFO | Update id=217955592 is handled. Duration 159 ms by bot id=8908632121
+2026-08-29 15:52:37,276 | INFO | Update id=217955593 is handled. Duration 157 ms by bot id=8908632121
+2026-08-29 15:52:38,440 | INFO | Update id=217955594 is handled. Duration 132 ms by bot id=8908632121
+2026-08-29 15:52:40,756 | INFO | Update id=217955595 is handled. Duration 159 ms by bot id=8908632121
+2026-08-29 15:52:42,156 | INFO | Update id=217955596 is handled. Duration 131 ms by bot id=8908632121
+2026-08-29 15:52:48,142 | INFO | Update id=217955597 is handled. Duration 97 ms by bot id=8908632121
+2026-08-29 15:54:07,923 | INFO | Update id=217955598 is handled. Duration 137 ms by bot id=8908632121
+2026-08-29 15:54:09,349 | INFO | Update id=217955599 is handled. Duration 132 ms by bot id=8908632121
+2026-08-29 15:54:11,163 | INFO | Update id=217955600 is handled. Duration 177 ms by bot id=8908632121
+2026-08-29 15:54:12,240 | INFO | Update id=217955601 is handled. Duration 121 ms by bot id=8908632121
+2026-08-29 15:54:16,408 | INFO | Update id=217955602 is handled. Duration 183 ms by bot id=8908632121
+2026-08-29 15:55:02,187 | INFO | Polling stopped
+2026-08-29 15:55:02,189 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 15:55:02,190 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 15:55:02,444 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 15:55:02,447 | ERROR | Бот остановлен😴🛑
+2026-08-29 16:00:15,370 | INFO | 🎉Бот запущен админом(консоль), приятного использования!
+2026-08-29 16:00:17,132 | INFO | Start polling
+2026-08-29 16:00:17,210 | INFO | Run polling for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 16:03:58,076 | INFO | Update id=217955603 is handled. Duration 249 ms by bot id=8908632121
+2026-08-29 16:04:03,911 | INFO | Update id=217955604 is handled. Duration 162 ms by bot id=8908632121
+2026-08-29 16:04:04,963 | INFO | Update id=217955605 is handled. Duration 194 ms by bot id=8908632121
+2026-08-29 16:04:06,107 | INFO | Update id=217955606 is handled. Duration 146 ms by bot id=8908632121
+2026-08-29 16:04:07,087 | INFO | Update id=217955607 is handled. Duration 273 ms by bot id=8908632121
+2026-08-29 16:04:07,997 | INFO | Update id=217955608 is handled. Duration 168 ms by bot id=8908632121
+2026-08-29 16:04:09,099 | INFO | Update id=217955609 is handled. Duration 229 ms by bot id=8908632121
+2026-08-29 16:04:09,718 | INFO | Update id=217955610 is handled. Duration 128 ms by bot id=8908632121
+2026-08-29 16:04:10,635 | INFO | Update id=217955611 is handled. Duration 190 ms by bot id=8908632121
+2026-08-29 16:04:11,351 | INFO | Update id=217955612 is handled. Duration 251 ms by bot id=8908632121
+2026-08-29 16:04:12,730 | INFO | Update id=217955613 is handled. Duration 237 ms by bot id=8908632121
+2026-08-29 16:04:16,158 | INFO | Update id=217955614 is handled. Duration 97 ms by bot id=8908632121
+2026-08-29 16:04:18,044 | INFO | Update id=217955615 is not handled. Duration 11 ms by bot id=8908632121
+2026-08-29 16:04:20,078 | INFO | Update id=217955616 is handled. Duration 287 ms by bot id=8908632121
+2026-08-29 16:04:21,262 | INFO | Update id=217955617 is handled. Duration 370 ms by bot id=8908632121
+2026-08-29 16:04:22,319 | INFO | Update id=217955618 is handled. Duration 188 ms by bot id=8908632121
+2026-08-29 16:04:23,091 | INFO | Update id=217955619 is handled. Duration 225 ms by bot id=8908632121
+2026-08-29 16:04:26,272 | INFO | Update id=217955620 is handled. Duration 139 ms by bot id=8908632121
+2026-08-29 16:04:27,733 | INFO | Update id=217955621 is handled. Duration 757 ms by bot id=8908632121
+2026-08-29 16:04:28,612 | INFO | Update id=217955622 is handled. Duration 135 ms by bot id=8908632121
+2026-08-29 16:04:30,171 | INFO | Update id=217955623 is handled. Duration 212 ms by bot id=8908632121
+2026-08-29 16:04:31,550 | INFO | Update id=217955624 is handled. Duration 137 ms by bot id=8908632121
+2026-08-29 16:04:33,350 | INFO | Update id=217955625 is handled. Duration 192 ms by bot id=8908632121
+2026-08-29 16:04:34,043 | INFO | Update id=217955626 is handled. Duration 132 ms by bot id=8908632121
+2026-08-29 16:04:35,948 | INFO | Update id=217955627 is handled. Duration 420 ms by bot id=8908632121
+2026-08-29 16:04:38,957 | INFO | Update id=217955628 is handled. Duration 111 ms by bot id=8908632121
+2026-08-29 16:04:42,261 | INFO | Update id=217955629 is handled. Duration 215 ms by bot id=8908632121
+2026-08-29 16:04:43,326 | INFO | Update id=217955630 is handled. Duration 134 ms by bot id=8908632121
+2026-08-29 16:04:44,434 | INFO | Update id=217955631 is handled. Duration 220 ms by bot id=8908632121
+2026-08-29 16:04:51,867 | INFO | Update id=217955632 is handled. Duration 241 ms by bot id=8908632121
+2026-08-29 16:04:54,355 | INFO | Update id=217955633 is handled. Duration 212 ms by bot id=8908632121
+2026-08-29 16:05:00,152 | INFO | Update id=217955634 is handled. Duration 314 ms by bot id=8908632121
+2026-08-29 16:05:01,231 | INFO | Update id=217955635 is handled. Duration 192 ms by bot id=8908632121
+2026-08-29 16:05:02,622 | INFO | Update id=217955636 is handled. Duration 202 ms by bot id=8908632121
+2026-08-29 16:05:04,508 | INFO | Update id=217955637 is handled. Duration 156 ms by bot id=8908632121
+2026-08-29 16:05:06,149 | INFO | Update id=217955638 is handled. Duration 106 ms by bot id=8908632121
+2026-08-29 16:05:07,431 | INFO | Update id=217955639 is handled. Duration 194 ms by bot id=8908632121
+2026-08-29 16:05:08,840 | INFO | Update id=217955640 is handled. Duration 532 ms by bot id=8908632121
+2026-08-29 16:05:10,641 | INFO | Update id=217955641 is handled. Duration 190 ms by bot id=8908632121
+2026-08-29 16:05:11,865 | INFO | Update id=217955642 is handled. Duration 462 ms by bot id=8908632121
+2026-08-29 16:05:13,278 | INFO | Update id=217955643 is handled. Duration 719 ms by bot id=8908632121
+2026-08-29 16:11:39,365 | INFO | Polling stopped
+2026-08-29 16:11:39,368 | ERROR | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-08-29 16:11:39,369 | WARNING | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8908632121)
+2026-08-29 16:11:39,632 | INFO | Polling stopped for bot @datastorageyou_bot id=8908632121 - 'Твои заметки☺️'
+2026-08-29 16:11:39,651 | ERROR | Бот остановлен😴🛑
