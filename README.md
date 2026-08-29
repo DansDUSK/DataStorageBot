@@ -1,4 +1,3 @@
-```markdown
 # 📦 Universal Storage Bot
 
 Telegram bot for storing notes and files with unique codes.  
@@ -46,7 +45,7 @@ text
 ---
 
 ## 📦 Installation
-```
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/DansDUSK/storage-bot.git
@@ -90,14 +89,12 @@ GitHub: DansDUSK
 Telegram: @daggerka
 
 ⭐ If you like this project, give it a star!
-```markdown
 text
 
 ---
 
 ## 🇷🇺 README.ru.md (Русский)
-```
-```markdown
+
 # 📦 Универсальный бот-хранилище
 
 Telegram-бот для хранения заметок и файлов с уникальными кодами.  
@@ -146,7 +143,7 @@ text
 ---
 
 ## 📦 Установка
-```
+
 1. Клонируй репозиторий:
    ```bash
    git clone https://github.com/DansDUSK/storage-bot.git
@@ -192,11 +189,9 @@ GitHub: DansDUSK
 Telegram: @daggerka
 
 ⭐ Если понравился проект — поставь звёздочку!
-```markdown
 text
 
 ---
 
 ## 📦 `requirements.txt`
 aiogram>=3.0.0
-```
